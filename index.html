@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de Página Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="https://via.placeholder.com/120x60" alt="Logo del sitio">
+      <h1>Nombre del Sitio</h1>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <h2>Bienvenido a nuestro sitio</h2>
+        <p>Esta es una maqueta con HTML5 semántico, CSS externo y Flexbox.</p>
+        <a class="button" href="#contacto">Escríbenos</a>
+      </div>
+      <img src="https://via.placeholder.com/400x250" alt="Imagen principal">
+    </section>
+
+    <section id="servicios" class="features">
+      <article>
+        <h3>Servicio 1</h3>
+        <p>Descripción breve del servicio ofrecido.</p>
+      </article>
+      <article>
+        <h3>Servicio 2</h3>
+        <p>Descripción breve del servicio ofrecido.</p>
+      </article>
+      <article>
+        <h3>Servicio 3</h3>
+        <p>Descripción breve del servicio ofrecido.</p>
+      </article>
+    </section>
+
+    <section id="galeria" class="gallery">
+      <h2>Galería</h2>
+      <div class="gallery-grid">
+        <img src="https://via.placeholder.com/200" alt="Galería 1">
+        <img src="https://via.placeholder.com/200" alt="Galería 2">
+        <img src="https://via.placeholder.com/200" alt="Galería 3">
+      </div>
+      <p>Visita nuestra <a href="#servicios">sección de servicios</a> para más información.</p>
+    </section>
+
+    <section id="contacto" class="contact-form">
+      <h2>Contacto</h2>
+      <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="correo@ejemplo.com">
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Nombre del Sitio. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

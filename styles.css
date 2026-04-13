@@ -1,0 +1,159 @@
+:root {
+  --bg: #f7f7f7;
+  --surface: #ffffff;
+  --primary: #33475b;
+  --accent: #4f9f9b;
+  --text: #2d2d2d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.site-header,
+.site-footer {
+  background: var(--primary);
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo img {
+  max-width: 120px;
+  height: auto;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero,
+.features,
+.gallery,
+.contact-form {
+  padding: 2rem;
+  background: var(--surface);
+  margin: 1rem 2rem;
+  border-radius: 12px;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero-content {
+  flex: 1 1 320px;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.85rem 1.5rem;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.features article {
+  flex: 1 1 220px;
+  background: #eef3f6;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.gallery-grid img {
+  width: calc(33.333% - 0.66rem);
+  min-width: 180px;
+  border-radius: 10px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.85rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contact-form button {
+  width: fit-content;
+  padding: 0.85rem 1.5rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.site-footer {
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .site-header,
+  .hero,
+  .features,
+  .gallery-grid {
+    flex-direction: column;
+  }
+
+  .gallery-grid img {
+    width: 100%;
+  }
+}
